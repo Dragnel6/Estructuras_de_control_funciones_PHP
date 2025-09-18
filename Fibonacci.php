@@ -1,3 +1,4 @@
+<?php
 function generarFibonacci($n) {
     $fibonacci = [];
     if ($n <= 0) {
@@ -16,12 +17,13 @@ function generarFibonacci($n) {
     return $fibonacci;
 }
 
-// Ejemplo de uso:
-$n = 10; // Puedes cambiar este valor para probar con otros números
+// uso:
+$n = 10; 
 $resultado = generarFibonacci($n);
 echo "Los primeros $n términos de la serie Fibonacci son:\n";
 foreach ($resultado as $valor) {
     echo $valor . " ";
 }
 echo "\n";
+?>
 

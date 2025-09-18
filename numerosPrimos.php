@@ -1,3 +1,4 @@
+<?php
 function esPrimo($numero) {
     if ($numero <= 1) {
         return false;
@@ -10,10 +11,12 @@ function esPrimo($numero) {
     return true;
 }
 
-// Ejemplo de uso:
-$num = 17; 
+// se cambia el número para probar:
+$num = 14; 
 if (esPrimo($num)) {
     echo "$num es un número primo.\n";
 } else {
     echo "$num no es un número primo.\n";
 }
+
+?>

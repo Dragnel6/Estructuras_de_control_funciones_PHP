@@ -1,14 +1,16 @@
+<?php
 function esPalindromo($texto) {
-    // Eliminar espacios y convertir a minúsculas
+    // se eliminan espacios y se convierte a minúsculas
     $limpio = strtolower(str_replace(' ', '', $texto));
     // Comparar con su reverso
     return $limpio === strrev($limpio);
 }
 
-// Ejemplo de uso:
+// uso:
 $cadena = "Anita lava la tina";
 if (esPalindromo($cadena)) {
     echo "\"$cadena\" es un palíndromo.\n";
 } else {
     echo "\"$cadena\" no es un palíndromo.\n";
 }
+?>
